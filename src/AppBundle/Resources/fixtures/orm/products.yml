@@ -1,0 +1,9 @@
+'AppBundle\Entity\Product':
+    product_{1..100}:
+        name: <sentence()>
+
+'AppBundle\Entity\Offer':
+    offer_{1..500}:
+        description: <paragraph()>
+        price: <numberBetween(0, 5)>
+        product: '@product_*'
